@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>RankMySelfie.com</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet"
+	href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script
+	src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script
+	src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link rel="stylesheet"
+	href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+<link rel="stylesheet"
+	href="http://localhost/rankmyselfie/css/Footer-with-logo.css">
+<link rel="stylesheet"
+	href="http://localhost/rankmyselfie/css/SliderBox.css">
+<link rel="stylesheet"
+	href="http://localhost/rankmyselfie/css/DropDown-box-image.css">
+<link rel="stylesheet"
+	href="http://localhost/rankmyselfie/css/MyCSS-settings.css">
+<script src="http://localhost/rankmyselfie/scripts/SliderBox.js"></script>
+<link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.6.3/css/font-awesome.min.css" rel="stylesheet" integrity="sha384-T8Gy5hrqNKT+hzMclPo118YTQO6cYprQmhrYwIiQ/3axmI1hQomh7Ud2hPOy8SP1" crossorigin="anonymous">
+</head>
+
+<body>
+
+	<nav class="navbar navbar-inverse">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<a class="navbar-brand"
+					href="http://localhost/rankmyselfie/web/app_dev.php/">RankMySelfie</a>
+			</div>
+			<ul class="nav navbar-nav">
+				<li><a href="#">Selfies</a></li>
+				<li><a
+					href="#">Profile</a></li>
+				<li><a href="#">Most Rated</a></li>
+			</ul>
+			<a href="http://localhost/rankmyselfie/web/app_dev.php/registeruser"
+				class="btn btn-danger navbar-btn" role="button">Register</a>
+	
+ 
+		</div>
+		 
+	</nav>
+
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				{% block body %}
+				{% endblock %}
+			</div>
+		</div>
+	</div>
+
+
+
+
+
+	<footer class="footer-basic-centered"
+		style="top: 100%;; position: absolute;">
+
+		<p class="footer-company-motto">RankMySelfie.com</p>
+
+		<p class="footer-links">
+			<a href="#">Home</a> · <a href="#">Register</a>
+			· <a href="#">About</a> · <a href="#">Impressum</a> · <a href="#">Contact</a>
+		</p>
+
+		<p class="footer-company-name">Adnan.M 2018</p>
+
+
+	<script type="text/javascript"
+		src="{{ asset('bundles/acmefoo/js/jquery.min.js') }}"></script>
+	{% block javascripts %}
+
+	{% endblock %}
+
+
+</body>
+
+
+
+
+</html>

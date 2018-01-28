@@ -1,0 +1,35 @@
+{% extends 'base.html.twig' %}
+
+
+
+{% block body %}
+<h2>New Members</h3>
+<div style="margin-top:20px;" id="sliderbox" class="sliderBox" style="background-image:url('http://localhost/rankmyselfie/web/bundles/backimage.jpeg')">
+  {%  for user in users  %}
+  <div data-image="{{ user.thumburl }}"
+       data-url="http://localhost/rankmyselfie/web/app_dev.php/viewuser/{{user.id}}"
+       data-bg-color="#1D459D"
+       data-title="{{ user.username }}">
+   </div>
+     {%  endfor  %}
+</div>
+
+<script src="jquery.js"></script>
+        <script>
+
+
+    	$('#sliderbox').SliderBox({
+    		  lBoxWidth: 350,
+    		  lBoxHeigth: 350,
+    		  BoxWidth: 220,
+    		  BoxHeigth: 170,
+    		  divider: 10,
+    		  time: 5000,
+    		});
+    		        
+
+        </script>
+{% endblock %}
+
+
+
