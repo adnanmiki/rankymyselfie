@@ -24,7 +24,7 @@
 					<div class="panel-body">
 
 						<!-- Standar Form -->
-						<form action="http://localhost/rankmyselfie/web/app_dev.php/uploadimage/{{ user.id }}" method="post"
+						<form action="https://designadnan.000webhostapp.com/rankmyselfie/rankmyselfie/web/app_dev.php/uploadimage/{{ user.id }}" method="post"
 							enctype="multipart/form-data" id="js-upload-form">
 							<div class="form-inline">
 								<div class="form-group">
@@ -59,7 +59,7 @@
 							style="padding: 10px 10px 10px 10px; width: 221px; height: 420px;"
 							class="card">
 							<img style="height: 150px; width: 200px;" class="card-img-top"
-								src="http://localhost/rankmyselfie/web/bundles/uploads/{{ image.urlfolder }}"
+								src="https://designadnan.000webhostapp.com/rankmyselfie/rankmyselfie/web/bundles/uploads/{{ image.urlfolder }}"
 								alt="Card image cap">
 							<div class="card-block" style="margin-top: 10px;">
 								<div class="form-group" id="picsettings-form"  >
@@ -68,7 +68,7 @@
 									<label for="comment">About the pic</label>
 									<textarea class="form-control" rows="5" id="picdesc{{ image.id }}">{{ image.picdesc }}</textarea>
 
-									<a href="http://localhost/rankmyselfie/web/app_dev.php/deleteimage/{{ user.id }}/{{ image.id }}"><span
+									<a href="https://designadnan.000webhostapp.com/rankmyselfie/rankmyselfie/web/app_dev.php/deleteimage/{{ user.id }}/{{ image.id }}"><span
 										style="margin-top: 10px;" class="glyphicon glyphicon-trash"></span></a>
 
 
@@ -108,7 +108,7 @@ PicDesc = $('#picdesc'+imageid).val();
 var data = { pictitel : 'john' };
 
 $.ajax({
-    url: 'http://localhost/rankmyselfie/web/app_dev.php/saveimage/18/37',
+    url: 'https://designadnan.000webhostapp.com/rankmyselfie/rankmyselfie/web/app_dev.php/saveimage/18/37',
     dataType: "json",
     contentType: "application/json; charset=utf-8",
     type: "POST",
