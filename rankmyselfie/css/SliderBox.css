@@ -34,7 +34,7 @@
 .sliderBox .container{
 	position: relative;
 	display: table;
-	width: 220px;
+	width: 100%;
 	height: 180px;
 }
 
